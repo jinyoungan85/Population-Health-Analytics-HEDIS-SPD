@@ -6,7 +6,7 @@
 - [Clinical Logic & Safety Workflow](#-clinical-logic--safety-workflow)
 - [SQL Logic](#-sql-logic)
 - [Sample Output & Analysis](#-sample-output--analysis)
-- [Real-World Limitations](#real-world-limitations-from-practice)
+- [Real-World Limitations](#realworld-limitations)
 
 ---
 
@@ -160,7 +160,7 @@ The following table demonstrates how the query prioritizes patient safety over s
 
 ---
 
-## ⚠️ Real World Limitations (From Practice)
+## ⚠️ Realworld Limitations
 Through my experience as a **Medical Assistant**, I observed that data in the EHR does not always reflect the patient's true clinical status.
 
 1.  **Unstructured Documentation:**
