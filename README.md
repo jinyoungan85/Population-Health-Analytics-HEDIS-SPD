@@ -6,8 +6,7 @@
 - [Clinical Logic & Safety Workflow](#-clinical-logic--safety-workflow)
 - [SQL Logic](#-sql-logic)
 - [Sample Output & Analysis](#-sample-output--analysis)
-- [Real-World Limitations](#-real-world-limitations-from-practice)
-
+- [Real-World Limitations](#real-world-limitations-from-practice)
 ---
 
 ## 📌 Project Overview
@@ -151,11 +150,12 @@ ORDER BY clinical_status;
 ## 📊 Sample Output & Analysis
 The following table demonstrates how the query prioritizes patient safety over simple gap identification.
 
-patient_id,current_med,clinical_status,exclusion_details,Action Required
-P1001,None,Excluded (Safety) 🛑,Contraindication: Pregnancy,None. Do not prescribe Statin. (Prevents medical error).
-P1002,None,GAP: Needs Therapy 🚨,NULL,High Priority: Outreach to provider to initiate Statin.
-P1003,None,Excluded (Safety) 🛑,Contraindication: Liver Disease,None. Verify LFTs (Liver Function Tests).
-P1004,Simvastatin 10mg,Review: Optimization ⚠️,NULL,Medium Priority: Consider switching to High Intensity per ADA guidelines.
+| patient_id | current_med | clinical_status | exclusion_details | Action Required |
+| :--- | :--- | :--- | :--- | :--- |
+| **P1001** | None | **Excluded (Safety) 🛑** | **Contraindication: Pregnancy** | **None.** Do not prescribe Statin. (Prevents medical error). |
+| **P1002** | None | **GAP: Needs Therapy 🚨** | NULL | **High Priority:** Outreach to provider to initiate Statin. |
+| **P1003** | None | **Excluded (Safety) 🛑** | **Contraindication: Liver Disease** | **None.** Verify LFTs (Liver Function Tests). |
+| **P1004** | Simvastatin 10mg | **Review: Optimization ⚠️** | NULL | **Medium Priority:** Consider switching to High Intensity per ADA guidelines. |
 
 ---
 
