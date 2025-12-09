@@ -1,5 +1,15 @@
 # Population Health Analytics: HEDIS SPD Care Gap Analysis
 
+## 📑 Table of Contents
+- [Project Overview](#-project-overview)
+- [Tech Stack & Skills](#-tech-stack--skills)
+- [Clinical Logic & Safety Workflow](#-clinical-logic--safety-workflow)
+- [SQL Logic](#-sql-logic)
+- [Sample Output & Analysis](#-sample-output--analysis)
+- [Real-World Limitations](#-real-world-limitations-from-practice)
+
+---
+
 ## 📌 Project Overview
 **Objective:** To automate the identification of care gaps for **Statin Therapy for Patients with Diabetes (SPD)**, a key HEDIS quality measure, while incorporating a robust **Clinical Safety Layer** to prevent medical errors and provider alert fatigue.
 
@@ -17,7 +27,17 @@ I developed a SQL algorithm that goes beyond simple gap analysis by integrating 
 ## 🧠 Clinical Logic & Safety Workflow
 This project utilizes my **Pharm.D. background** to filter data based on clinical safety profiles.
 
-
+```mermaid
+graph TD
+    A[T2DM Patient Age 40-75] --> B{Active Statin?}
+    B -- No --> C{Check Safety / Contraindications}
+    C -- Pregnancy/Liver Disease --> D[Excluded: Safety Risk 🛑]
+    C -- Intolerance History --> E[Excluded: Intolerance]
+    C -- None --> F[GAP DETECTED: Initiate Therapy 🚨]
+    B -- Yes --> G{Intensity Check}
+    G -- High --> H[Compliant ✅]
+    G -- Mod/Low --> I[Optimization Opportunity ⚠️]
+```
 
 * **Inclusion Criteria (The Denominator):**
     * Age: 40 - 75 years
@@ -111,18 +131,6 @@ SELECT
 FROM Medication_Check mc
 LEFT JOIN Clinical_Exclusions ex ON mc.patient_id = ex.patient_id
 ORDER BY clinical_status;
-```
-
-```mermaid
-graph TD
-    A[T2DM Patient Age 40-75] --> B{Active Statin?}
-    B -- No --> C{Check Safety / Contraindications}
-    C -- Pregnancy/Liver Disease --> D[Excluded: Safety Risk 🛑]
-    C -- Intolerance History --> E[Excluded: Intolerance]
-    C -- None --> F[GAP DETECTED: Initiate Therapy 🚨]
-    B -- Yes --> G{Intensity Check}
-    G -- High --> H[Compliant ✅]
-    G -- Mod/Low --> I[Optimization Opportunity ⚠️]
 ```
 
 ---
