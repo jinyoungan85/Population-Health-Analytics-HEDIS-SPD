@@ -6,7 +6,7 @@
 - [Clinical Logic & Safety Workflow](#-clinical-logic--safety-workflow)
 - [SQL Logic](#-sql-logic)
 - [Sample Output & Analysis](#-sample-output--analysis)
-- [Real-World Limitations](#realworld-limitations)
+- [Realworld Limitations](#-realworld-limitations)
 
 ---
 
