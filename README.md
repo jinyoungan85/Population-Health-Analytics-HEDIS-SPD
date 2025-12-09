@@ -113,4 +113,35 @@ LEFT JOIN Clinical_Exclusions ex ON mc.patient_id = ex.patient_id
 ORDER BY clinical_status;
 ```
 
-📊 Sample Output & AnalysisThe following table demonstrates how the query prioritizes patient safety over simple gap identification.patient_idcurrent_medclinical_statusexclusion_detailsAction RequiredP1001NoneExcluded (Safety) 🛑Contraindication: PregnancyNone. Do not prescribe Statin. (Prevents medical error).P1002NoneGAP: Needs Therapy 🚨NULLHigh Priority: Outreach to provider to initiate Statin.P1003NoneExcluded (Safety) 🛑Contraindication: Liver DiseaseNone. Verify LFTs (Liver Function Tests).P1004Simvastatin 10mgReview: Optimization ⚠️NULLMedium Priority: Consider switching to High Intensity per ADA guidelines.⚠️ Real-World Limitations (From Practice)Through my experience as a Medical Assistant, I observed that data in the EHR does not always reflect the patient's true clinical status.Unstructured Documentation:Providers often document reasons for discontinuation in free-text notes (e.g., "Patient stopped meds due to leg cramps") rather than using structured diagnosis codes.Implication: A SQL query relying only on ICD-10 codes may miss these details, leading to false positives.Solution: Future iterations should incorporate NLP (Natural Language Processing) or SQL text-mining (LIKE '%cramps%') on clinical notes.Discontinued Medications:Medications often appear 'Active' in the EHR even if the patient stopped taking them months ago.Solution: Incorporate Last_Fill_Date logic to flag medications with no refills in >6 months for Medication Reconciliation.
+```mermaid
+graph TD
+    A[T2DM Patient Age 40-75] --> B{Active Statin?}
+    B -- No --> C{Check Safety / Contraindications}
+    C -- Pregnancy/Liver Disease --> D[Excluded: Safety Risk 🛑]
+    C -- Intolerance History --> E[Excluded: Intolerance]
+    C -- None --> F[GAP DETECTED: Initiate Therapy 🚨]
+    B -- Yes --> G{Intensity Check}
+    G -- High --> H[Compliant ✅]
+    G -- Mod/Low --> I[Optimization Opportunity ⚠️]
+```
+
+---
+
+## ⚠️ Real-World Limitations (From Practice)
+Through my experience as a **Medical Assistant**, I observed that data in the EHR does not always reflect the patient's true clinical status.
+
+1.  **Unstructured Documentation:**
+    * Providers often document reasons for discontinuation in **free-text notes** (e.g., *"Patient stopped meds due to leg cramps"*) rather than using structured diagnosis codes.
+    * **Implication:** A SQL query relying only on ICD-10 codes may miss these details, leading to false positives.
+    * **Solution:** Future iterations should incorporate **NLP (Natural Language Processing)** or SQL text-mining (`LIKE '%cramps%'`) on clinical notes.
+
+2.  **Discontinued Medications:**
+    * Medications often appear 'Active' in the EHR even if the patient stopped taking them months ago.
+    * **Solution:** Incorporate `Last_Fill_Date` logic to flag medications with no refills in >6 months for **Medication Reconciliation**.
+
+---
+
+## 🛠 Tech Stack
+* **Database:** SQL (MySQL/PostgreSQL Syntax)
+* **Domain:** Healthcare Informatics, Population Health, Patient Safety
+* **Standards:** ICD-10, HEDIS Measures, ACC/AHA Guidelines
