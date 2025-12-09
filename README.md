@@ -7,6 +7,7 @@
 - [SQL Logic](#-sql-logic)
 - [Sample Output & Analysis](#-sample-output--analysis)
 - [Real-World Limitations](#real-world-limitations-from-practice)
+
 ---
 
 ## 📌 Project Overview
@@ -159,7 +160,7 @@ The following table demonstrates how the query prioritizes patient safety over s
 
 ---
 
-## ⚠️ Real-World Limitations (From Practice)
+## ⚠️ Real World Limitations (From Practice)
 Through my experience as a **Medical Assistant**, I observed that data in the EHR does not always reflect the patient's true clinical status.
 
 1.  **Unstructured Documentation:**
