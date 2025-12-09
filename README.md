@@ -6,7 +6,7 @@
 - [Clinical Logic & Safety Workflow](#-clinical-logic--safety-workflow)
 - [SQL Logic](#-sql-logic)
 - [Sample Output & Analysis](#-sample-output--analysis)
-- [Realworld Limitations](#-realworld-limitations)
+- [Realworld Limitations](#limitations)
 
 ---
 
@@ -159,7 +159,7 @@ The following table demonstrates how the query prioritizes patient safety over s
 | **P1004** | Simvastatin 10mg | **Review: Optimization ⚠️** | NULL | **Medium Priority:** Consider switching to High Intensity per ADA guidelines. |
 
 ---
-
+<a id="limitations"></a>
 ## ⚠️ Realworld Limitations
 Through my experience as a **Medical Assistant**, I observed that data in the EHR does not always reflect the patient's true clinical status.
 
