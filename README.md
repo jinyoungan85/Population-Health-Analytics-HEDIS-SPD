@@ -24,6 +24,19 @@ I developed a SQL algorithm that goes beyond simple gap analysis by integrating 
 
 ---
 
+## 🛠 Tech Stack & Skills
+This project demonstrates the intersection of **Clinical Knowledge** and **Technical Implementation**.
+
+* **Languages:** SQL (MySQL/PostgreSQL Syntax)
+* **Domain Knowledge:** Population Health Management, HEDIS Measures, Patient Safety
+* **Standards:** ICD-10, ACC/AHA Guidelines, RxNorm
+* **Key Techniques:**
+    * **Cohort Selection:** Filtering by Age, Diagnosis, and Medication status.
+    * **Clinical Logic Mapping:** Translating medical guidelines into `CASE WHEN` logic.
+    * **Data Cleaning:** Handling NULLs and unstructured exclusions.
+
+---
+
 ## 🧠 Clinical Logic & Safety Workflow
 This project utilizes my **Pharm.D. background** to filter data based on clinical safety profiles.
 
@@ -135,6 +148,17 @@ ORDER BY clinical_status;
 
 ---
 
+## 📊 Sample Output & Analysis
+The following table demonstrates how the query prioritizes patient safety over simple gap identification.
+
+patient_id,current_med,clinical_status,exclusion_details,Action Required
+P1001,None,Excluded (Safety) 🛑,Contraindication: Pregnancy,None. Do not prescribe Statin. (Prevents medical error).
+P1002,None,GAP: Needs Therapy 🚨,NULL,High Priority: Outreach to provider to initiate Statin.
+P1003,None,Excluded (Safety) 🛑,Contraindication: Liver Disease,None. Verify LFTs (Liver Function Tests).
+P1004,Simvastatin 10mg,Review: Optimization ⚠️,NULL,Medium Priority: Consider switching to High Intensity per ADA guidelines.
+
+---
+
 ## ⚠️ Real-World Limitations (From Practice)
 Through my experience as a **Medical Assistant**, I observed that data in the EHR does not always reflect the patient's true clinical status.
 
@@ -146,10 +170,3 @@ Through my experience as a **Medical Assistant**, I observed that data in the EH
 2.  **Discontinued Medications:**
     * Medications often appear 'Active' in the EHR even if the patient stopped taking them months ago.
     * **Solution:** Incorporate `Last_Fill_Date` logic to flag medications with no refills in >6 months for **Medication Reconciliation**.
-
----
-
-## 🛠 Tech Stack
-* **Database:** SQL (MySQL/PostgreSQL Syntax)
-* **Domain:** Healthcare Informatics, Population Health, Patient Safety
-* **Standards:** ICD-10, HEDIS Measures, ACC/AHA Guidelines
