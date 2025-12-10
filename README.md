@@ -1,25 +1,12 @@
 # Population Health Analytics: HEDIS SPD Care Gap Analysis
 
 ## 📑 Table of Contents
-📌 [**Project Overview**](#-project-overview)
+📌 [**Overview**](#-project-overview)
 🛠 [**Tech Stack & Skills**](#-tech-stack--skills)
-🧠 [**Clinical Logic & Safety Workflow**](#-clinical-logic--safety-workflow)
+🧠 [**Clinical Logic**](#-clinical-logic--safety-workflow)
 💻 [**SQL Logic**](#-sql-logic)
 📊 [**Sample Output & Analysis**](#-sample-output--analysis)
-⚠️ [**Real-World Limitations**](#limitations)
-
-[**Overview**](#-project-overview) &nbsp;|&nbsp; [**Tech Stack**](#-tech-stack--skills) &nbsp;|&nbsp; [**Clinical Logic**](#-clinical-logic--safety-workflow) &nbsp;|&nbsp; [**SQL Code**](#-sql-logic) &nbsp;|&nbsp; [**Output**](#-sample-output--analysis) &nbsp;|&nbsp; [**Limitations**](#limitations)
-
-<p align="center">
-  <a href="#-project-overview">Project Overview</a> &nbsp;|&nbsp;
-  <a href="#-tech-stack--skills">Tech Stack</a> &nbsp;|&nbsp;
-  <a href="#-clinical-logic--safety-workflow">Clinical Logic</a>
-</p>
-<p align="center">
-  <a href="#-sql-logic">SQL Logic</a> &nbsp;|&nbsp;
-  <a href="#-sample-output--analysis">Sample Output</a> &nbsp;|&nbsp;
-  <a href="#limitations">Limitations</a>
-</p>
+⚠️ [**Limitations**](#limitations)
 
 ---
 
