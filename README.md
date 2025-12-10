@@ -165,7 +165,7 @@ The following table demonstrates how the query prioritizes patient safety over s
 
 ---
 <a id="limitations"></a>
-## ⚠️ Realworld Limitations
+## ⚠️ Real World Limitations
 Through my experience as a **Medical Assistant**, I observed that data in the EHR does not always reflect the patient's true clinical status.
 
 1.  **Unstructured Documentation:**
