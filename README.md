@@ -1,12 +1,12 @@
 # Population Health Analytics: HEDIS SPD Care Gap Analysis
 
 ## 📑 Table of Contents
-- [Project Overview](#-project-overview)
-- [Tech Stack & Skills](#-tech-stack--skills)
-- [Clinical Logic & Safety Workflow](#-clinical-logic--safety-workflow)
-- [SQL Logic](#-sql-logic)
-- [Sample Output & Analysis](#-sample-output--analysis)
-- [Realworld Limitations](#limitations)
+📌 [**Project Overview**](#-project-overview)
+🛠 [**Tech Stack & Skills**](#-tech-stack--skills)
+🧠 [**Clinical Logic & Safety Workflow**](#-clinical-logic--safety-workflow)
+💻 [**SQL Logic**](#-sql-logic)
+📊 [**Sample Output & Analysis**](#-sample-output--analysis)
+⚠️ [**Real-World Limitations**](#limitations)
 
 ---
 
