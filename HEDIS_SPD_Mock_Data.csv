@@ -1,0 +1,501 @@
+patient_id,age,gender,current_med,clinical_status,exclusion_details
+P1001,56,Male,None,Excluded (Safety/Intolerance),History of Intolerance
+P1002,48,Female,None,GAP: Needs Therapy,
+P1003,72,Female,Rosuvastatin 40mg,Compliant,
+P1004,59,Female,None,GAP: Needs Therapy,
+P1005,52,Male,None,GAP: Needs Therapy,
+P1006,67,Male,Atorvastatin 10mg,Review: Optimization,
+P1007,68,Male,Atorvastatin 40mg,Compliant,
+P1008,52,Female,Atorvastatin 40mg,Compliant,
+P1009,74,Female,Rosuvastatin 20mg,Compliant,
+P1010,45,Female,Rosuvastatin 40mg,Compliant,
+P1011,57,Male,Simvastatin 20mg,Review: Optimization,
+P1012,44,Female,Rosuvastatin 40mg,Compliant,
+P1013,64,Female,None,GAP: Needs Therapy,
+P1014,41,Male,None,GAP: Needs Therapy,
+P1015,49,Male,None,GAP: Needs Therapy,
+P1016,69,Male,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1017,44,Male,None,GAP: Needs Therapy,
+P1018,72,Female,Pravastatin 40mg,Review: Optimization,
+P1019,40,Male,None,GAP: Needs Therapy,
+P1020,57,Male,Atorvastatin 80mg,Compliant,
+P1021,71,Female,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1022,50,Male,Atorvastatin 40mg,Compliant,
+P1023,60,Male,Rosuvastatin 20mg,Compliant,
+P1024,65,Male,Pravastatin 40mg,Review: Optimization,
+P1025,64,Female,Atorvastatin 80mg,Compliant,
+P1026,61,Female,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1027,66,Male,None,GAP: Needs Therapy,
+P1028,52,Female,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1029,72,Female,Atorvastatin 10mg,Review: Optimization,
+P1030,73,Male,None,GAP: Needs Therapy,
+P1031,74,Female,None,Excluded (Safety/Intolerance),History of Intolerance
+P1032,40,Male,Rosuvastatin 40mg,Compliant,
+P1033,60,Male,None,Excluded (Safety/Intolerance),History of Intolerance
+P1034,45,Female,Atorvastatin 40mg,Compliant,
+P1035,67,Female,None,GAP: Needs Therapy,
+P1036,56,Female,Rosuvastatin 40mg,Compliant,
+P1037,44,Male,None,GAP: Needs Therapy,
+P1038,70,Male,Rosuvastatin 20mg,Compliant,
+P1039,44,Female,None,Excluded (Safety/Intolerance),End Stage Renal Disease
+P1040,42,Male,None,Excluded (Safety/Intolerance),History of Intolerance
+P1041,62,Male,None,Excluded (Safety/Intolerance),History of Intolerance
+P1042,49,Female,Rosuvastatin 20mg,Compliant,
+P1043,49,Male,None,GAP: Needs Therapy,
+P1044,58,Female,None,GAP: Needs Therapy,
+P1045,56,Male,Rosuvastatin 20mg,Compliant,
+P1046,60,Female,Rosuvastatin 40mg,Compliant,
+P1047,53,Male,None,GAP: Needs Therapy,
+P1048,48,Female,Atorvastatin 10mg,Review: Optimization,
+P1049,40,Female,None,GAP: Needs Therapy,
+P1050,52,Male,None,GAP: Needs Therapy,
+P1051,43,Female,Atorvastatin 40mg,Compliant,
+P1052,40,Female,Rosuvastatin 40mg,Compliant,
+P1053,71,Female,Atorvastatin 40mg,Compliant,
+P1054,73,Female,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1055,67,Female,Atorvastatin 80mg,Compliant,
+P1056,70,Female,Rosuvastatin 40mg,Compliant,
+P1057,47,Male,Atorvastatin 80mg,Compliant,
+P1058,65,Male,None,Excluded (Safety/Intolerance),End Stage Renal Disease
+P1059,73,Male,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1060,42,Male,Simvastatin 20mg,Review: Optimization,
+P1061,51,Male,Simvastatin 20mg,Review: Optimization,
+P1062,40,Male,None,GAP: Needs Therapy,
+P1063,44,Female,Atorvastatin 40mg,Compliant,
+P1064,69,Male,None,Excluded (Safety/Intolerance),End Stage Renal Disease
+P1065,69,Male,Simvastatin 20mg,Review: Optimization,
+P1066,56,Female,None,GAP: Needs Therapy,
+P1067,62,Male,Simvastatin 20mg,Review: Optimization,
+P1068,54,Female,Simvastatin 20mg,Review: Optimization,
+P1069,60,Male,None,GAP: Needs Therapy,
+P1070,53,Female,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1071,41,Female,None,Excluded (Safety/Intolerance),History of Intolerance
+P1072,50,Male,None,GAP: Needs Therapy,
+P1073,73,Male,Atorvastatin 10mg,Review: Optimization,
+P1074,73,Female,Atorvastatin 40mg,Compliant,
+P1075,57,Female,Atorvastatin 10mg,Review: Optimization,
+P1076,69,Female,Atorvastatin 80mg,Compliant,
+P1077,54,Female,None,GAP: Needs Therapy,
+P1078,66,Male,None,Excluded (Safety/Intolerance),End Stage Renal Disease
+P1079,73,Male,None,GAP: Needs Therapy,
+P1080,72,Male,None,GAP: Needs Therapy,
+P1081,63,Female,Rosuvastatin 20mg,Compliant,
+P1082,54,Female,Atorvastatin 80mg,Compliant,
+P1083,69,Male,Atorvastatin 10mg,Review: Optimization,
+P1084,56,Male,Atorvastatin 80mg,Compliant,
+P1085,44,Male,Atorvastatin 40mg,Compliant,
+P1086,68,Male,None,GAP: Needs Therapy,
+P1087,43,Female,Simvastatin 20mg,Review: Optimization,
+P1088,49,Female,Pravastatin 40mg,Review: Optimization,
+P1089,56,Female,Rosuvastatin 20mg,Compliant,
+P1090,49,Female,None,GAP: Needs Therapy,
+P1091,56,Male,None,GAP: Needs Therapy,
+P1092,59,Female,None,GAP: Needs Therapy,
+P1093,63,Female,Simvastatin 20mg,Review: Optimization,
+P1094,44,Female,Rosuvastatin 20mg,Compliant,
+P1095,73,Female,None,GAP: Needs Therapy,
+P1096,45,Female,None,GAP: Needs Therapy,
+P1097,41,Female,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1098,52,Male,None,GAP: Needs Therapy,
+P1099,50,Male,None,GAP: Needs Therapy,
+P1100,62,Male,None,GAP: Needs Therapy,
+P1101,55,Male,None,GAP: Needs Therapy,
+P1102,70,Female,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1103,50,Male,None,GAP: Needs Therapy,
+P1104,55,Female,Pravastatin 40mg,Review: Optimization,
+P1105,47,Female,Simvastatin 20mg,Review: Optimization,
+P1106,43,Male,None,GAP: Needs Therapy,
+P1107,43,Male,None,GAP: Needs Therapy,
+P1108,64,Female,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1109,42,Male,None,GAP: Needs Therapy,
+P1110,71,Male,None,GAP: Needs Therapy,
+P1111,42,Male,None,Excluded (Safety/Intolerance),History of Intolerance
+P1112,66,Male,Atorvastatin 80mg,Compliant,
+P1113,68,Female,Rosuvastatin 20mg,Compliant,
+P1114,71,Female,Rosuvastatin 20mg,Compliant,
+P1115,58,Female,None,Excluded (Safety/Intolerance),History of Intolerance
+P1116,60,Female,Rosuvastatin 40mg,Compliant,
+P1117,44,Female,Atorvastatin 40mg,Compliant,
+P1118,57,Male,Atorvastatin 40mg,Compliant,
+P1119,67,Female,Atorvastatin 40mg,Compliant,
+P1120,61,Female,Atorvastatin 40mg,Compliant,
+P1121,60,Female,None,GAP: Needs Therapy,
+P1122,45,Female,None,GAP: Needs Therapy,
+P1123,40,Male,Rosuvastatin 40mg,Compliant,
+P1124,44,Male,Atorvastatin 40mg,Compliant,
+P1125,51,Male,Rosuvastatin 20mg,Compliant,
+P1126,65,Male,Rosuvastatin 40mg,Compliant,
+P1127,73,Female,None,GAP: Needs Therapy,
+P1128,53,Female,Atorvastatin 10mg,Review: Optimization,
+P1129,65,Male,Atorvastatin 80mg,Compliant,
+P1130,66,Female,None,GAP: Needs Therapy,
+P1131,48,Male,Rosuvastatin 20mg,Compliant,
+P1132,65,Male,None,Excluded (Safety/Intolerance),History of Intolerance
+P1133,61,Male,Atorvastatin 10mg,Review: Optimization,
+P1134,69,Male,None,GAP: Needs Therapy,
+P1135,56,Female,Atorvastatin 80mg,Compliant,
+P1136,65,Male,None,Excluded (Safety/Intolerance),History of Intolerance
+P1137,75,Female,Atorvastatin 80mg,Compliant,
+P1138,40,Female,Atorvastatin 40mg,Compliant,
+P1139,47,Male,Rosuvastatin 20mg,Compliant,
+P1140,74,Female,Atorvastatin 40mg,Compliant,
+P1141,54,Female,None,Excluded (Safety/Intolerance),History of Intolerance
+P1142,61,Male,Atorvastatin 10mg,Review: Optimization,
+P1143,53,Female,Atorvastatin 80mg,Compliant,
+P1144,65,Male,None,GAP: Needs Therapy,
+P1145,67,Male,None,Excluded (Safety/Intolerance),End Stage Renal Disease
+P1146,62,Male,None,Excluded (Safety/Intolerance),History of Intolerance
+P1147,53,Female,None,GAP: Needs Therapy,
+P1148,63,Female,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1149,41,Male,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1150,65,Male,Simvastatin 20mg,Review: Optimization,
+P1151,53,Female,Rosuvastatin 20mg,Compliant,
+P1152,46,Male,None,GAP: Needs Therapy,
+P1153,42,Male,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1154,62,Female,Rosuvastatin 20mg,Compliant,
+P1155,57,Female,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1156,74,Male,Rosuvastatin 20mg,Compliant,
+P1157,54,Female,Atorvastatin 80mg,Compliant,
+P1158,64,Female,Atorvastatin 80mg,Compliant,
+P1159,67,Male,Atorvastatin 80mg,Compliant,
+P1160,49,Female,None,Excluded (Safety/Intolerance),History of Intolerance
+P1161,56,Male,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1162,61,Female,None,Excluded (Safety/Intolerance),History of Intolerance
+P1163,65,Female,None,GAP: Needs Therapy,
+P1164,64,Female,Rosuvastatin 20mg,Compliant,
+P1165,56,Male,None,GAP: Needs Therapy,
+P1166,52,Female,None,GAP: Needs Therapy,
+P1167,59,Male,None,GAP: Needs Therapy,
+P1168,64,Male,Rosuvastatin 20mg,Compliant,
+P1169,43,Male,None,GAP: Needs Therapy,
+P1170,49,Female,None,GAP: Needs Therapy,
+P1171,42,Female,None,Excluded (Safety/Intolerance),History of Intolerance
+P1172,57,Male,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1173,75,Female,None,GAP: Needs Therapy,
+P1174,61,Male,None,GAP: Needs Therapy,
+P1175,73,Female,Pravastatin 40mg,Review: Optimization,
+P1176,47,Male,Atorvastatin 40mg,Compliant,
+P1177,58,Female,None,Excluded (Safety/Intolerance),History of Intolerance
+P1178,45,Male,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1179,65,Female,None,GAP: Needs Therapy,
+P1180,73,Male,Rosuvastatin 40mg,Compliant,
+P1181,45,Male,Atorvastatin 40mg,Compliant,
+P1182,72,Male,None,GAP: Needs Therapy,
+P1183,61,Female,Atorvastatin 40mg,Compliant,
+P1184,60,Female,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1185,45,Male,Atorvastatin 80mg,Compliant,
+P1186,45,Female,Atorvastatin 80mg,Compliant,
+P1187,43,Female,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1188,69,Female,Simvastatin 20mg,Review: Optimization,
+P1189,50,Female,Rosuvastatin 40mg,Compliant,
+P1190,69,Male,Atorvastatin 80mg,Compliant,
+P1191,70,Male,Rosuvastatin 20mg,Compliant,
+P1192,63,Female,Simvastatin 20mg,Review: Optimization,
+P1193,48,Female,Rosuvastatin 20mg,Compliant,
+P1194,42,Female,None,GAP: Needs Therapy,
+P1195,70,Male,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1196,75,Male,Rosuvastatin 40mg,Compliant,
+P1197,63,Female,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1198,70,Female,None,Excluded (Safety/Intolerance),History of Intolerance
+P1199,45,Female,Atorvastatin 80mg,Compliant,
+P1200,41,Female,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1201,59,Female,None,GAP: Needs Therapy,
+P1202,67,Male,None,Excluded (Safety/Intolerance),End Stage Renal Disease
+P1203,50,Male,None,GAP: Needs Therapy,
+P1204,43,Female,Atorvastatin 10mg,Review: Optimization,
+P1205,54,Female,None,GAP: Needs Therapy,
+P1206,45,Male,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1207,69,Male,Pravastatin 40mg,Review: Optimization,
+P1208,41,Female,None,GAP: Needs Therapy,
+P1209,54,Male,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1210,50,Male,Rosuvastatin 40mg,Compliant,
+P1211,47,Female,Atorvastatin 80mg,Compliant,
+P1212,65,Female,Rosuvastatin 20mg,Compliant,
+P1213,44,Female,Atorvastatin 40mg,Compliant,
+P1214,45,Male,Rosuvastatin 20mg,Compliant,
+P1215,65,Female,None,Excluded (Safety/Intolerance),History of Intolerance
+P1216,43,Male,Rosuvastatin 40mg,Compliant,
+P1217,58,Male,Simvastatin 20mg,Review: Optimization,
+P1218,59,Female,Atorvastatin 80mg,Compliant,
+P1219,72,Female,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1220,59,Female,None,Excluded (Safety/Intolerance),End Stage Renal Disease
+P1221,51,Female,None,GAP: Needs Therapy,
+P1222,40,Female,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1223,65,Male,Atorvastatin 80mg,Compliant,
+P1224,53,Male,None,Excluded (Safety/Intolerance),History of Intolerance
+P1225,50,Male,Atorvastatin 40mg,Compliant,
+P1226,75,Male,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1227,52,Female,Atorvastatin 40mg,Compliant,
+P1228,42,Male,None,GAP: Needs Therapy,
+P1229,72,Female,Atorvastatin 10mg,Review: Optimization,
+P1230,45,Female,Rosuvastatin 20mg,Compliant,
+P1231,49,Female,Rosuvastatin 20mg,Compliant,
+P1232,44,Female,Atorvastatin 40mg,Compliant,
+P1233,62,Female,Rosuvastatin 20mg,Compliant,
+P1234,49,Female,None,GAP: Needs Therapy,
+P1235,41,Male,Atorvastatin 80mg,Compliant,
+P1236,52,Female,Atorvastatin 80mg,Compliant,
+P1237,41,Male,Atorvastatin 40mg,Compliant,
+P1238,59,Male,None,Excluded (Safety/Intolerance),History of Intolerance
+P1239,40,Female,Atorvastatin 40mg,Compliant,
+P1240,48,Male,Atorvastatin 80mg,Compliant,
+P1241,56,Female,Atorvastatin 40mg,Compliant,
+P1242,48,Female,None,GAP: Needs Therapy,
+P1243,50,Female,None,Excluded (Safety/Intolerance),History of Intolerance
+P1244,54,Male,Rosuvastatin 40mg,Compliant,
+P1245,63,Male,Atorvastatin 80mg,Compliant,
+P1246,74,Female,Simvastatin 20mg,Review: Optimization,
+P1247,69,Male,Simvastatin 20mg,Review: Optimization,
+P1248,70,Female,Atorvastatin 80mg,Compliant,
+P1249,44,Female,Simvastatin 20mg,Review: Optimization,
+P1250,53,Female,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1251,50,Male,Atorvastatin 40mg,Compliant,
+P1252,48,Male,Atorvastatin 10mg,Review: Optimization,
+P1253,73,Female,Pravastatin 40mg,Review: Optimization,
+P1254,51,Male,None,GAP: Needs Therapy,
+P1255,74,Male,Rosuvastatin 40mg,Compliant,
+P1256,74,Female,Rosuvastatin 40mg,Compliant,
+P1257,40,Female,None,Excluded (Safety/Intolerance),History of Intolerance
+P1258,61,Female,None,Excluded (Safety/Intolerance),History of Intolerance
+P1259,68,Female,Pravastatin 40mg,Review: Optimization,
+P1260,47,Male,None,GAP: Needs Therapy,
+P1261,50,Female,None,GAP: Needs Therapy,
+P1262,53,Female,None,GAP: Needs Therapy,
+P1263,69,Male,Rosuvastatin 40mg,Compliant,
+P1264,74,Female,Atorvastatin 80mg,Compliant,
+P1265,60,Female,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1266,44,Female,Atorvastatin 80mg,Compliant,
+P1267,58,Female,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1268,53,Female,Atorvastatin 40mg,Compliant,
+P1269,65,Male,Rosuvastatin 20mg,Compliant,
+P1270,43,Male,Rosuvastatin 40mg,Compliant,
+P1271,64,Female,None,GAP: Needs Therapy,
+P1272,64,Female,None,Excluded (Safety/Intolerance),History of Intolerance
+P1273,57,Female,Rosuvastatin 20mg,Compliant,
+P1274,47,Female,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1275,53,Female,None,GAP: Needs Therapy,
+P1276,71,Female,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1277,72,Female,Atorvastatin 40mg,Compliant,
+P1278,62,Female,None,Excluded (Safety/Intolerance),History of Intolerance
+P1279,54,Female,Pravastatin 40mg,Review: Optimization,
+P1280,72,Female,Rosuvastatin 40mg,Compliant,
+P1281,64,Female,Rosuvastatin 20mg,Compliant,
+P1282,56,Male,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1283,72,Male,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1284,41,Male,Atorvastatin 40mg,Compliant,
+P1285,53,Female,Simvastatin 20mg,Review: Optimization,
+P1286,45,Male,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1287,45,Female,None,Excluded (Safety/Intolerance),End Stage Renal Disease
+P1288,42,Female,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1289,46,Male,Simvastatin 20mg,Review: Optimization,
+P1290,47,Female,None,GAP: Needs Therapy,
+P1291,54,Male,Atorvastatin 80mg,Compliant,
+P1292,68,Male,Rosuvastatin 20mg,Compliant,
+P1293,72,Female,Atorvastatin 10mg,Review: Optimization,
+P1294,69,Male,Atorvastatin 10mg,Review: Optimization,
+P1295,66,Male,Atorvastatin 40mg,Compliant,
+P1296,75,Female,None,Excluded (Safety/Intolerance),History of Intolerance
+P1297,68,Female,Simvastatin 20mg,Review: Optimization,
+P1298,72,Male,None,GAP: Needs Therapy,
+P1299,66,Female,None,GAP: Needs Therapy,
+P1300,72,Male,None,GAP: Needs Therapy,
+P1301,43,Male,Rosuvastatin 20mg,Compliant,
+P1302,61,Female,Rosuvastatin 20mg,Compliant,
+P1303,41,Female,Rosuvastatin 40mg,Compliant,
+P1304,49,Female,Rosuvastatin 40mg,Compliant,
+P1305,44,Female,None,GAP: Needs Therapy,
+P1306,49,Female,None,GAP: Needs Therapy,
+P1307,72,Female,Atorvastatin 80mg,Compliant,
+P1308,52,Male,Pravastatin 40mg,Review: Optimization,
+P1309,70,Female,Rosuvastatin 40mg,Compliant,
+P1310,75,Male,None,Excluded (Safety/Intolerance),History of Intolerance
+P1311,63,Male,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1312,54,Male,Rosuvastatin 20mg,Compliant,
+P1313,68,Male,None,GAP: Needs Therapy,
+P1314,47,Female,Atorvastatin 40mg,Compliant,
+P1315,44,Female,None,GAP: Needs Therapy,
+P1316,68,Female,None,GAP: Needs Therapy,
+P1317,43,Male,Atorvastatin 80mg,Compliant,
+P1318,51,Male,None,GAP: Needs Therapy,
+P1319,41,Male,Rosuvastatin 40mg,Compliant,
+P1320,66,Male,Rosuvastatin 40mg,Compliant,
+P1321,70,Female,Simvastatin 20mg,Review: Optimization,
+P1322,75,Female,Atorvastatin 40mg,Compliant,
+P1323,75,Female,None,GAP: Needs Therapy,
+P1324,65,Male,None,GAP: Needs Therapy,
+P1325,66,Female,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1326,44,Female,Atorvastatin 40mg,Compliant,
+P1327,59,Female,None,GAP: Needs Therapy,
+P1328,50,Female,Simvastatin 20mg,Review: Optimization,
+P1329,49,Male,Rosuvastatin 20mg,Compliant,
+P1330,45,Male,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1331,47,Male,Pravastatin 40mg,Review: Optimization,
+P1332,62,Female,Simvastatin 20mg,Review: Optimization,
+P1333,65,Male,Simvastatin 20mg,Review: Optimization,
+P1334,51,Male,None,Excluded (Safety/Intolerance),History of Intolerance
+P1335,65,Male,None,Excluded (Safety/Intolerance),History of Intolerance
+P1336,52,Male,Pravastatin 40mg,Review: Optimization,
+P1337,57,Female,Simvastatin 20mg,Review: Optimization,
+P1338,64,Female,Rosuvastatin 40mg,Compliant,
+P1339,72,Female,Atorvastatin 80mg,Compliant,
+P1340,51,Male,None,GAP: Needs Therapy,
+P1341,75,Female,Rosuvastatin 40mg,Compliant,
+P1342,43,Female,None,GAP: Needs Therapy,
+P1343,44,Male,Atorvastatin 80mg,Compliant,
+P1344,47,Male,Rosuvastatin 20mg,Compliant,
+P1345,67,Male,Atorvastatin 10mg,Review: Optimization,
+P1346,70,Female,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1347,48,Female,Atorvastatin 80mg,Compliant,
+P1348,68,Male,None,GAP: Needs Therapy,
+P1349,53,Male,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1350,61,Female,Atorvastatin 80mg,Compliant,
+P1351,50,Female,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1352,62,Female,Rosuvastatin 40mg,Compliant,
+P1353,40,Female,Atorvastatin 80mg,Compliant,
+P1354,60,Male,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1355,65,Male,Rosuvastatin 20mg,Compliant,
+P1356,75,Female,Atorvastatin 10mg,Review: Optimization,
+P1357,62,Male,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1358,40,Female,Rosuvastatin 40mg,Compliant,
+P1359,54,Female,Atorvastatin 10mg,Review: Optimization,
+P1360,60,Female,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1361,48,Male,Rosuvastatin 40mg,Compliant,
+P1362,48,Female,None,Excluded (Safety/Intolerance),End Stage Renal Disease
+P1363,49,Female,None,GAP: Needs Therapy,
+P1364,65,Female,None,GAP: Needs Therapy,
+P1365,74,Female,None,GAP: Needs Therapy,
+P1366,64,Male,Atorvastatin 40mg,Compliant,
+P1367,65,Female,None,Excluded (Safety/Intolerance),History of Intolerance
+P1368,50,Female,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1369,41,Male,None,GAP: Needs Therapy,
+P1370,46,Male,Atorvastatin 10mg,Review: Optimization,
+P1371,57,Male,None,GAP: Needs Therapy,
+P1372,66,Male,None,GAP: Needs Therapy,
+P1373,73,Male,Atorvastatin 10mg,Review: Optimization,
+P1374,66,Female,None,GAP: Needs Therapy,
+P1375,56,Male,None,GAP: Needs Therapy,
+P1376,63,Male,Atorvastatin 10mg,Review: Optimization,
+P1377,64,Female,None,GAP: Needs Therapy,
+P1378,46,Male,Atorvastatin 40mg,Compliant,
+P1379,45,Female,Rosuvastatin 20mg,Compliant,
+P1380,63,Male,None,GAP: Needs Therapy,
+P1381,72,Male,Simvastatin 20mg,Review: Optimization,
+P1382,68,Female,None,GAP: Needs Therapy,
+P1383,61,Female,Pravastatin 40mg,Review: Optimization,
+P1384,65,Female,None,GAP: Needs Therapy,
+P1385,67,Female,None,GAP: Needs Therapy,
+P1386,60,Female,Rosuvastatin 40mg,Compliant,
+P1387,46,Male,None,GAP: Needs Therapy,
+P1388,56,Male,Atorvastatin 10mg,Review: Optimization,
+P1389,59,Female,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1390,59,Female,None,GAP: Needs Therapy,
+P1391,61,Female,Rosuvastatin 40mg,Compliant,
+P1392,67,Male,Rosuvastatin 20mg,Compliant,
+P1393,46,Male,Rosuvastatin 40mg,Compliant,
+P1394,40,Female,Atorvastatin 10mg,Review: Optimization,
+P1395,71,Male,Atorvastatin 40mg,Compliant,
+P1396,52,Female,None,GAP: Needs Therapy,
+P1397,69,Female,None,GAP: Needs Therapy,
+P1398,62,Male,Rosuvastatin 40mg,Compliant,
+P1399,58,Female,None,GAP: Needs Therapy,
+P1400,71,Female,Rosuvastatin 40mg,Compliant,
+P1401,69,Male,None,GAP: Needs Therapy,
+P1402,68,Female,Rosuvastatin 40mg,Compliant,
+P1403,68,Female,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1404,69,Female,Atorvastatin 40mg,Compliant,
+P1405,55,Male,None,Excluded (Safety/Intolerance),History of Intolerance
+P1406,58,Female,None,GAP: Needs Therapy,
+P1407,57,Male,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1408,40,Male,None,GAP: Needs Therapy,
+P1409,53,Female,Atorvastatin 10mg,Review: Optimization,
+P1410,41,Male,Atorvastatin 10mg,Review: Optimization,
+P1411,67,Male,None,GAP: Needs Therapy,
+P1412,69,Female,None,GAP: Needs Therapy,
+P1413,43,Female,None,GAP: Needs Therapy,
+P1414,40,Female,None,GAP: Needs Therapy,
+P1415,47,Female,Rosuvastatin 40mg,Compliant,
+P1416,68,Male,Rosuvastatin 20mg,Compliant,
+P1417,42,Male,None,GAP: Needs Therapy,
+P1418,71,Male,None,GAP: Needs Therapy,
+P1419,49,Female,Simvastatin 20mg,Review: Optimization,
+P1420,49,Female,Simvastatin 20mg,Review: Optimization,
+P1421,58,Female,None,Excluded (Safety/Intolerance),History of Intolerance
+P1422,73,Female,Atorvastatin 80mg,Compliant,
+P1423,72,Male,Rosuvastatin 40mg,Compliant,
+P1424,62,Female,Atorvastatin 80mg,Compliant,
+P1425,67,Male,None,GAP: Needs Therapy,
+P1426,71,Female,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1427,46,Male,Rosuvastatin 40mg,Compliant,
+P1428,68,Female,Simvastatin 20mg,Review: Optimization,
+P1429,47,Male,None,GAP: Needs Therapy,
+P1430,40,Male,None,GAP: Needs Therapy,
+P1431,42,Male,None,GAP: Needs Therapy,
+P1432,63,Female,Rosuvastatin 20mg,Compliant,
+P1433,62,Female,None,GAP: Needs Therapy,
+P1434,47,Male,None,GAP: Needs Therapy,
+P1435,42,Male,Atorvastatin 80mg,Compliant,
+P1436,72,Female,None,GAP: Needs Therapy,
+P1437,67,Male,Atorvastatin 40mg,Compliant,
+P1438,47,Female,None,GAP: Needs Therapy,
+P1439,73,Female,None,GAP: Needs Therapy,
+P1440,74,Male,None,GAP: Needs Therapy,
+P1441,71,Male,Atorvastatin 10mg,Review: Optimization,
+P1442,63,Female,Atorvastatin 40mg,Compliant,
+P1443,53,Male,Simvastatin 20mg,Review: Optimization,
+P1444,71,Male,Atorvastatin 80mg,Compliant,
+P1445,55,Female,Rosuvastatin 20mg,Compliant,
+P1446,43,Female,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1447,60,Female,Atorvastatin 40mg,Compliant,
+P1448,53,Female,None,GAP: Needs Therapy,
+P1449,70,Male,None,GAP: Needs Therapy,
+P1450,57,Male,Rosuvastatin 20mg,Compliant,
+P1451,46,Female,Rosuvastatin 20mg,Compliant,
+P1452,49,Female,Rosuvastatin 40mg,Compliant,
+P1453,46,Male,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1454,72,Female,None,GAP: Needs Therapy,
+P1455,62,Male,Atorvastatin 80mg,Compliant,
+P1456,60,Female,None,GAP: Needs Therapy,
+P1457,58,Male,Atorvastatin 10mg,Review: Optimization,
+P1458,58,Female,Rosuvastatin 20mg,Compliant,
+P1459,75,Male,None,GAP: Needs Therapy,
+P1460,68,Male,None,GAP: Needs Therapy,
+P1461,57,Male,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1462,41,Female,Atorvastatin 80mg,Compliant,
+P1463,40,Female,Rosuvastatin 20mg,Compliant,
+P1464,44,Female,Rosuvastatin 20mg,Compliant,
+P1465,59,Female,None,GAP: Needs Therapy,
+P1466,50,Male,Atorvastatin 80mg,Compliant,
+P1467,41,Male,None,GAP: Needs Therapy,
+P1468,42,Female,Simvastatin 20mg,Review: Optimization,
+P1469,62,Male,Atorvastatin 10mg,Review: Optimization,
+P1470,51,Female,None,GAP: Needs Therapy,
+P1471,59,Male,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1472,44,Female,None,GAP: Needs Therapy,
+P1473,69,Male,None,GAP: Needs Therapy,
+P1474,48,Female,Atorvastatin 40mg,Compliant,
+P1475,73,Female,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
+P1476,74,Female,Atorvastatin 80mg,Compliant,
+P1477,61,Male,Atorvastatin 40mg,Compliant,
+P1478,63,Female,Rosuvastatin 20mg,Compliant,
+P1479,56,Female,None,GAP: Needs Therapy,
+P1480,49,Female,Atorvastatin 80mg,Compliant,
+P1481,69,Female,Rosuvastatin 40mg,Compliant,
+P1482,62,Female,Atorvastatin 80mg,Compliant,
+P1483,71,Female,Atorvastatin 80mg,Compliant,
+P1484,56,Female,None,GAP: Needs Therapy,
+P1485,56,Female,Atorvastatin 10mg,Review: Optimization,
+P1486,53,Female,Atorvastatin 80mg,Compliant,
+P1487,48,Male,None,GAP: Needs Therapy,
+P1488,41,Male,Pravastatin 40mg,Review: Optimization,
+P1489,64,Female,Rosuvastatin 40mg,Compliant,
+P1490,48,Female,Rosuvastatin 20mg,Compliant,
+P1491,61,Female,None,Excluded (Safety/Intolerance),Contraindication: Liver Disease
+P1492,43,Female,None,GAP: Needs Therapy,
+P1493,65,Male,Atorvastatin 40mg,Compliant,
+P1494,68,Male,None,GAP: Needs Therapy,
+P1495,73,Female,Rosuvastatin 20mg,Compliant,
+P1496,62,Male,None,GAP: Needs Therapy,
+P1497,50,Female,Atorvastatin 40mg,Compliant,
+P1498,45,Male,Rosuvastatin 20mg,Compliant,
+P1499,57,Female,Atorvastatin 80mg,Compliant,
+P1500,60,Female,None,Excluded (Safety/Intolerance),Contraindication: Pregnancy
