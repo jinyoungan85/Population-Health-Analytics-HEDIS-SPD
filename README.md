@@ -1,5 +1,7 @@
 # Population Health Analytics: HEDIS SPD Care Gap Analysis
 
+![SQL](https://img.shields.io/badge/Language-SQL-blue) ![HEDIS](https://img.shields.io/badge/Standard-HEDIS_&_ICD--10-orange) ![Domain](https://img.shields.io/badge/Domain-Population_Health-green) ![Safety](https://img.shields.io/badge/Focus-Patient_Safety-red)
+
 ## 📑 Table of Contents
 📌 [**Overview**](#-project-overview)
 🛠 [**Tech Stack & Skills**](#-tech-stack--skills)
