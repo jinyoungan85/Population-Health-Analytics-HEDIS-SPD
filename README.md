@@ -181,12 +181,12 @@ I developed an interactive **Power BI Dashboard** to translate the raw SQL outpu
 ![Pharmacist Action List](Dashboard_ActionList.png)
 
 ### 🛠️ Technical Implementation (DAX)
-To measure true performance, I used **DAX** to create the **Adjusted Adherence Rate**, ensuring safety exclusions are removed from the denominator.
+To measure true performance, I used **DAX** to create the **Statin Adherence Rate**, ensuring safety exclusions are removed from the denominator.
 
-* **Adjusted Adherence Rate (Measure):**
+* **Statin Adherence Rate (Measure):**
     *Calculated by removing safety exclusions from the denominator to reflect true performance.*
     ```dax
-    Adjusted Adherence Rate = 
+    Statin Adherence Rate = 
     VAR Denominator = [Total Patients] - [Safety Exclusions]
     RETURN DIVIDE([Compliant Count], Denominator, 0)
     ```
