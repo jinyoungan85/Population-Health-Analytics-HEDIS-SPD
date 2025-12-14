@@ -7,7 +7,7 @@
 🛠 [**Tech Stack & Skills**](#-tech-stack--skills)
 🧠 [**Clinical Logic**](#-clinical-logic--safety-workflow)
 💻 [**SQL Logic**](#-sql-logic)
-📊 [**Sample Output & Analysis**](#-sample-output--analysis)
+📊 [**Dashboard & Visualization (Power BI)**](#-dashboard--visualization)
 ⚠️ [**Limitations**](#limitations)
 
 ---
@@ -152,21 +152,6 @@ ORDER BY clinical_status;
 ```
 
 ---
-
-## 📊 Sample Output & Analysis
-The SQL query generates a patient-level list used to populate the **Population Health Dashboard**. Below is a mockup demonstrating how this data is visualized for stakeholders (e.g., Physicians, Quality Managers) to prioritize outreach.
-
-![Dashboard Mockup](hedis_dashboard_mockup.png)
-*(Note: Visualizations were generated using Python/Matplotlib based on synthetic data to simulate a Power BI/Tableau environment.)*
-
-The following table demonstrates how the query prioritizes patient safety over simple gap identification.
-
-| patient_id | current_med | clinical_status | exclusion_details | Action Required |
-| :--- | :--- | :--- | :--- | :--- |
-| **P1001** | None | **Excluded (Safety) 🛑** | **Contraindication: Pregnancy** | **None.** Do not prescribe Statin. (Prevents medical error). |
-| **P1002** | None | **GAP: Needs Therapy 🚨** | NULL | **High Priority:** Outreach to provider to initiate Statin. |
-| **P1003** | None | **Excluded (Safety) 🛑** | **Contraindication: Liver Disease** | **None.** Verify LFTs (Liver Function Tests). |
-| **P1004** | Simvastatin 10mg | **Review: Optimization ⚠️** | NULL | **Medium Priority:** Consider switching to High Intensity per ADA guidelines. |
 
 ## 📊 Dashboard & Visualization (Power BI)
 I developed an interactive **Power BI Dashboard** to translate the raw SQL output into actionable insights for different stakeholders.
