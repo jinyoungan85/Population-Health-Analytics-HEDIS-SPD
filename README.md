@@ -179,6 +179,7 @@ I developed an interactive **Power BI Dashboard** to translate the raw SQL outpu
 **Workflow:** Filters the data to show only patients with **"GAP: Needs Therapy"** status, enabling efficient outreach.
 
 ![Pharmacist Action List](Dashboard_ActionList.png)
+*(Note: This table shows a **filtered Pharmacist Action List** and intentionally displays only patients with **`clinical_status = "GAP: Needs Therapy"`)*
 
 ### 🛠️ Technical Implementation (DAX)
 To measure true performance, I used **DAX** to create the **Statin Adherence Rate**, ensuring safety exclusions are removed from the denominator.
