@@ -133,18 +133,21 @@ Medication_Check AS (
 )
 
 -- 4. Final Actionable Report
-SELECT
+SELECT 
     mc.patient_id,
+    tp.age,
+    tp.gender,
     COALESCE(mc.med_name, 'None') AS current_med,
-    CASE
-        WHEN ex.patient_id IS NOT NULL THEN 'Excluded (Safety/Intolerance) 🛑'
-        WHEN mc.intensity = 'None' THEN 'GAP: Needs Therapy 🚨'
-        WHEN mc.intensity = 'Moderate/Low' THEN 'Review: Optimization Oppty ⚠️'
-        ELSE 'Compliant ✅'
+    CASE 
+        WHEN ex.patient_id IS NOT NULL THEN 'Excluded (Safety/Intolerance)'
+        WHEN mc.intensity = 'None' THEN 'GAP: Needs Therapy'
+        WHEN mc.intensity = 'Moderate/Low' THEN 'Review: Optimization Oppty'
+        ELSE 'Compliant'
     END AS clinical_status,
     ex.reason AS exclusion_details
 FROM Medication_Check mc
 LEFT JOIN Clinical_Exclusions ex ON mc.patient_id = ex.patient_id
+JOIN Target_Population tp ON mc.patient_id = tp.patient_id
 ORDER BY clinical_status;
 ```
 
