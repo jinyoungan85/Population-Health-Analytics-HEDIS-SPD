@@ -165,6 +165,38 @@ The following table demonstrates how the query prioritizes patient safety over s
 | **P1003** | None | **Excluded (Safety) 🛑** | **Contraindication: Liver Disease** | **None.** Verify LFTs (Liver Function Tests). |
 | **P1004** | Simvastatin 10mg | **Review: Optimization ⚠️** | NULL | **Medium Priority:** Consider switching to High Intensity per ADA guidelines. |
 
+## 📊 Dashboard & Visualization (Power BI)
+I developed an interactive **Power BI Dashboard** to translate the raw SQL output into actionable insights for different stakeholders.
+
+### 1. Executive Summary (Leadership View)
+**Target Audience:** Medical Directors, Quality Managers
+* **Key Insight:** The current Statin Adherence Rate is **46.77%**, significantly below the CMS Star Rating target of **80%**.
+* **Analysis:** The visualization highlights that the **40-50 age group** has the highest gap rate, suggesting a need for targeted patient education in younger demographics.
+
+![Executive Dashboard](Dashboard_Overview.png)
+*(Note: Visuals are based on mock data. Red indicates non-compliance/gaps, Green indicates compliance.)*
+
+### 2. Pharmacist Action List (Operational View)
+**Target Audience:** Clinical Pharmacists, Care Gap Coordinators
+* **Workflow:** This page filters the data to show only **142 actionable patients** (excluding those with safety contraindications).
+* **Efficiency:** Eliminates manual chart review by prioritizing patients with "GAP: Needs Therapy" status.
+
+![Pharmacist Action List](Dashboard_ActionList.png)
+
+### 🛠️ Technical Implementation (DAX)
+To ensure dynamic reporting, I utilized **DAX (Data Analysis Expressions)** for key performance indicators:
+
+* **Statin Adherence Rate:** Calculated using the PDC (Proportion of Days Covered) logic concept.
+    ```dax
+    Statin Adherence Rate = 
+    VAR Denominator = [Total Patients] - [Excluded Count]
+    RETURN DIVIDE([Compliant Count], Denominator, 0)
+    ```
+* **Dynamic Filtering:** Implemented page-level filters to segregate 'Safety Exclusions' (Pregnancy/Liver Disease) from 'Actionable Gaps'.
+
+> **📂 File Note:** The full Power BI project file (`.pbix`) is available in this repository for review.
+
+
 ---
 <a id="limitations"></a>
 ## ⚠️ Real World Limitations
