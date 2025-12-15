@@ -169,8 +169,7 @@ The SQL query generates a clean dataset identifying care gaps while explicitly f
 I developed an interactive **Power BI Dashboard** to translate the raw SQL output into actionable insights.
 
 ### 1. Executive Summary
-**Key Insight:** The dashboard visualizes the "Safety Funnel," separating true care gaps from safety exclusions (e.g., Pregnancy, Liver Disease), preventing inappropriate provider alerts.
-
+**Key Insight:** The dashboard stratifies the patient population, clearly distinguishing true care gaps from safety exclusions (e.g., Pregnancy, Liver Disease) to prevent inappropriate provider alerts.
 ![Executive Dashboard](Dashboard_Overview.png)
 *(Note: Visuals are based on mock data generated for this project.)*
 
