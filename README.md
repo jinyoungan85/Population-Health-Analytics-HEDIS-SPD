@@ -205,11 +205,12 @@ In work environment, I would implement the following to normalize and analyze me
 To bridge the gap between *Raw Data* and *Clinical Analysis*, I utilize a reference mapping strategy:
 
 1.  **Data Cleaning:** Standardize raw NDCs into the **11-digit format (5-4-2)**  to ensure accurate joining (e.g., handling hyphens or omitted leading zeros).
-2.  **Mapping (JOIN):** Perform a crosswalk by joining cleaned NDCs with a standard **Drug Compendia** (e.g., **RxNorm**).
+2.  **Mapping (JOIN):** Perform a crosswalk by joining cleaned NDCs with a standard drug compendia (e.g., RxNorm).
 3.  **Normalization:** Convert granular NDCs into standardized **RxCUIs (RxNorm Concept Unique Identifiers)**, specifically targeting the **SCD (Semantic Clinical Drug)** level (Ingredient + Strength + Dose Form).
     * *Example Mapping:*
         ```text
-        Raw NDC: 00093-7468-98 (Teva)  -->  RxCUI: 197382  -->  SCD: "Atorvastatin 80 MG Oral Tablet"
+        Raw NDC: 00093-5057-98  -->  RxCUI: 259255  -->  SCD: "Atorvastatin 80 MG Oral Tablet"
+        Raw NDC: 72205-0025-90  -->  RxCUI: 259255  -->  SCD: "Atorvastatin 80 MG Oral Tablet"        
         ```
 4.  **Logic Application:** Apply **ACC/AHA Guidelines** to the normalized clinical attributes to determine Statin Intensity (High vs. Moderate).
 
