@@ -9,6 +9,7 @@
 💻 [**SQL Logic**](#-sql-logic)
 📊 [**Sample Output**](#-sample-output)
 📈 [**Dashboard & Visualization**](#-dashboard--visualization-power-bi)
+🚀 [**Real-World Strategy**](#-real-world-implementation-strategy)
 ⚠️ [**Limitations**](#limitations)
 
 ---
@@ -190,6 +191,7 @@ To measure true performance, I used **DAX** to create the **Statin Adherence Rat
     VAR Denominator = [Total Patients] - [Safety Exclusions]
     RETURN DIVIDE([Compliant Count], Denominator, 0)
     ```
+---
 
 ## 🚀 Real-World Implementation Strategy
 While this project utilizes a simulated dataset with simplified schemas (e.g., `med_category = 'Statin'`) to demonstrate clinical logic flow, I am aware of the complexities involved in processing **Raw Claims Data**.
@@ -202,10 +204,10 @@ In work environment, I would implement the following to normalize and analyze me
 ### 2. Normalization (The Crosswalk)
 To bridge the gap between *Raw Data* and *Clinical Analysis*, I utilize a reference mapping strategy:
 
-1.  **Data Cleaning:** Standardize raw NDCs into the **11-digit format** to ensure accurate joining (e.g., handling hyphens or omitted leading zeros).
+1.  **Data Cleaning:** Standardize raw NDCs into the **11-digit format (5-4-2)**  to ensure accurate joining (e.g., handling hyphens or omitted leading zeros).
 2.  **Mapping (JOIN):** Perform a crosswalk by joining cleaned NDCs with a standard **Drug Compendia** (e.g., **RxNorm**).
-3.  **Normalization:** Convert NDCs into standardized **RxCUIs (RxNorm Concept Unique Identifiers)**, specifically targeting the **SCD (Semantic Clinical Drug)** level (Ingredient + Strength + Dose Form).
-4.  **Logic Application:** Apply **ACC/AHA Guidelines** to the normalized clinical attributes to determine Statin Intensity (High vs. Moderate).
+3.  **Normalization:** Convert NDCs into standardized **RxCUIs (RxNorm Concept Unique Identifiers)**, specifically targeting the **SCD (Semantic Clinical Drug)** level (Ingredient + Strength + Dose Form).  * *Example Mapping:* Raw NDC `00093-7468-98` $\rightarrow$ RxCUI `197382` $\rightarrow$ **"Atorvastatin 80 MG Oral Tablet"**
+5.  **Logic Application:** Apply **ACC/AHA Guidelines** to the normalized clinical attributes to determine Statin Intensity (High vs. Moderate).
 
 ---
 
