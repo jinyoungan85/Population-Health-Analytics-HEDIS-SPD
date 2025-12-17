@@ -191,10 +191,26 @@ To measure true performance, I used **DAX** to create the **Statin Adherence Rat
     RETURN DIVIDE([Compliant Count], Denominator, 0)
     ```
 
+## 🚀 Real-World Implementation Strategy
+While this project utilizes a simulated dataset with simplified schemas (e.g., `med_category = 'Statin'`) to demonstrate clinical logic flow, I am aware of the complexities involved in processing **Raw Claims Data**.
+In work environment, I would implement the following to normalize and analyze medication data:
+
+### 1. Data Source & Challenge
+* **Raw data:** Pharmacy Claims Data
+* **The Problem:** Claims data relies on **NDCs (National Drug Codes)** for reimbursement. NDCs are tied to specific manufacturers and package sizes, making them too granular for clinical analysis (e.g., multiple NDCs represent "Atorvastatin 40mg").
+
+### 2. Normalization (The Crosswalk)
+To bridge the gap between *Raw Data* and *Clinical Analysis*, I utilize a reference mapping strategy:
+
+1.  **Data Cleaning:** Standardize raw NDCs into the **11-digit format** to ensure accurate joining (e.g., handling hyphens or omitted leading zeros).
+2.  **Mapping (JOIN):** Perform a crosswalk by joining cleaned NDCs with a standard **Drug Compendia** (e.g., **RxNorm**).
+3.  **Normalization:** Convert NDCs into standardized **RxCUIs (RxNorm Concept Unique Identifiers)**, specifically targeting the **SCD (Semantic Clinical Drug)** level (Ingredient + Strength + Dose Form).
+4.  **Logic Application:** Apply **ACC/AHA Guidelines** to the normalized clinical attributes to determine Statin Intensity (High vs. Moderate).
+
 ---
 
 <a id="limitations"></a>
-## ⚠️ Limitations & Real-World Improvements
+## ⚠️ Project Limitations & Real-World Improvements
 Through my experience as a **Medical Assistant**, I observed that data in the EHR does not always reflect the patient's true clinical status.
 
 1.  **Unstructured Documentation (Free-text):**
