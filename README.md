@@ -208,7 +208,9 @@ To bridge the gap between *Raw Data* and *Clinical Analysis*, I utilize a refere
 2.  **Mapping (JOIN):** Perform a crosswalk by joining cleaned NDCs with a standard **Drug Compendia** (e.g., **RxNorm**).
 3.  **Normalization:** Convert granular NDCs into standardized **RxCUIs (RxNorm Concept Unique Identifiers)**, specifically targeting the **SCD (Semantic Clinical Drug)** level (Ingredient + Strength + Dose Form).
     * *Example Mapping:*
-    * ```Raw NDC `00093-7468-98` $\rightarrow$ RxCUI `197382` $\rightarrow$ **"Atorvastatin 80 MG Oral Tablet"** ```
+        ```text
+        Raw NDC: 00093-7468-98 (Teva)  -->  RxCUI: 197382  -->  SCD: "Atorvastatin 80 MG Oral Tablet"
+        ```
 4.  **Logic Application:** Apply **ACC/AHA Guidelines** to the normalized clinical attributes to determine Statin Intensity (High vs. Moderate).
 
 ---
